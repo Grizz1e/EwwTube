@@ -1,0 +1,37 @@
+html{
+    background: rgb(216,240,247);
+}
+body{
+    
+    display: flex;
+   justify-content:center;
+    align-items: center;
+    height:100vh;
+}
+button.signup{
+background: red;
+border: 1px solid red;
+}
+button.signin{
+    background: limegreen;
+    border: 1px solid rgb(18, 243, 18);
+
+}
+button{
+    margin: 0 15px;
+    width: 140px;
+    height: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius: 20px;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    background: linear-gradient(top,#ffffff33 1px,#ffffff00 1px,#0000001a 100%);
+    box-shadow: 0 60px 12px -18px rgb(0,0,0,0), 0 60px 20px -12px rgb(0,0,0,0);
+    animation: infinite ease-in-out alternate;
+    -webkit-animation: infinite ease-in-out alternate;
+}

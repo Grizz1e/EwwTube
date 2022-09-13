@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,4 +42,7 @@ nav {
 }
 .thumb-box, .pfp-box, .upcoming {
     background: url("https://picsum.photos/1920/1080");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
