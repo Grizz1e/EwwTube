@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EwwTube</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css">
+    <script src="/src/script/index.js" defer></script>
+</head>
+
+<body class="text-white bg-dark">
+    <nav class="bg-black flex justify-between items-center p-5 fixed top-0 w-screen z-50 h-15">
+        <div class="left-nav flex items-center text-center">
+            <div class="mr-20 hover:text-highlight">
+                <i class="fa fa-bars fa-2xl" id="menu-btn"></i>
+            </div>
+            <div class="hover:text-highlight relative">
+                <a href="/">
+                    <h1 class="font-bold text-3xl whitespace-nowrap"><i
+                            class="fa-brands fa-youtube fa-xl mx-1 text-highlight"></i><span
+                            class="font-oswald">EwwTube</span><sup
+                            class="text-base mb-5 font-sans text-grey absolute top-0.1">NP</sup></h1>
+                </a>
+            </div>
+        </div>
+        <div class="center-nav flex items-center bg-bg rounded border-4 border-transparent hover:border-highlight hover:border-4 transition-none"
+            id="center-nav">
+            <i class="fa-solid fa-magnifying-glass pl-1"></i>
+            <input type="text" class="w-96 h-10 px-5 bg-transparent search-bar" id="search-bar" placeholder="Search">
+        </div>
+        <div class="right-nav flex items-center">
+            <div>
+                <i class="fa fa-arrow-up-from-bracket fa-2xl hover:text-highlight px-5"></i>
+            </div>
+            <div>
+                <i class="fa-regular fa-bell fa-2xl hover:text-highlight px-5"></i>
+            </div>
+            <div>
+                <i class="fa-regular fa-user fa-2xl hover:text-highlight px-5"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="flex">
+        <div class="menu-list fixed bg-black overflow-hidden overflow-y-scroll " id="left-container">
+            <ul class="pb-96">
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-home"></i>Home</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-people-group"></i>Following</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-star"></i>Premium</li>
+                <li>
+                    <hr class="border-grey mx-auto my-5 w-4/5">
+                </li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-book"></i>Library</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-clock-rotate-left"></i>History</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-film"></i>Your Videos</li>
+                <li>
+                    <hr class="border-grey mx-auto my-5 w-4/5">
+                </li>
+                <li class="py-2 pl-5 pr-2 text-grey font-bold">SUBSCRIPTIONS</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-home"></i>Home</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-people-group"></i>Following</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-star"></i>Premium</li>
+                <li>
+                    <hr class="border-grey mx-auto my-5 w-4/5">
+                </li>
+                <li class="py-2 pl-5 pr-2 text-grey font-bold">EXPLORE</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-gamepad"></i>Gaming</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-trophy"></i>Sports</li>
+                <li>
+                    <hr class="border-grey mx-auto my-5 w-4/5">
+                </li>
+                <li class="py-2 pl-5 pr-2 text-grey font-bold">MORE FROM EWWTUBE</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa-regular fa-circle-play text-highlight"></i>EwwTube Music</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-child text-highlight text-3xl"></i>EwwTube Kids</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-tv text-highlight"></i>EwwTube TV</li>
+                <li>
+                    <hr class="border-grey mx-auto my-5 w-4/5">
+                </li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa fa-cog"></i>Settings</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa-regular fa-flag"></i>Report history</li>
+                <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                        class="fa-regular fa-circle-question"></i>Premium</li>
+                <li>
+                    <hr class="border-grey mx-auto my-5 w-4/5">
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="ml-96 home-area my-28 grid grid-cols-4 gap-1 gap-y-40" id="home-area">
+        <div class="vid-box w-80 h-52 m-auto rounded-lg hover:scale-105">
+            <div class="thumb-box h-5/6 rounded-lg"></div>
+            <div class="mt-5 flex creator-box">
+                <div class="pfp-box aspect-square w-10 h-10 rounded-full mr-5"></div>
+                <div class="title-and-name">
+                    <div class="title-box">
+                        <h1>Official Season 1 Trailer | Better Fuel Huell</h1>
+                    </div>
+                    <div class="name-box">
+                        <h1>FireyGaming</h1>
+                    </div>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vid-box w-80 h-52 m-auto rounded-lg hover:scale-105">
+            <div class="thumb-box h-5/6 rounded-lg"></div>
+            <div class="mt-5 flex creator-box">
+                <div class="pfp-box aspect-square w-10 h-10 rounded-full mr-5"></div>
+                <div class="title-and-name">
+                    <div class="title-box">
+                        <h1>Official Season 1 Trailer | Better Fuel Huell</h1>
+                    </div>
+                    <div class="name-box">
+                        <h1>FireyGaming</h1>
+                    </div>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vid-box w-80 h-52 m-auto rounded-lg hover:scale-105">
+            <div class="thumb-box h-5/6 rounded-lg"></div>
+            <div class="mt-5 flex creator-box">
+                <div class="pfp-box aspect-square w-10 h-10 rounded-full mr-5"></div>
+                <div class="title-and-name">
+                    <div class="title-box">
+                        <h1>Official Season 1 Trailer | Better Fuel Huell</h1>
+                    </div>
+                    <div class="name-box">
+                        <h1>FireyGaming</h1>
+                    </div>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vid-box w-80 h-52 m-auto rounded-lg hover:scale-105">
+            <div class="thumb-box h-5/6 rounded-lg"></div>
+            <div class="mt-5 flex creator-box">
+                <div class="pfp-box aspect-square w-10 h-10 rounded-full mr-5"></div>
+                <div class="title-and-name">
+                    <div class="title-box">
+                        <h1>Official Season 1 Trailer | Better Fuel Huell</h1>
+                    </div>
+                    <div class="name-box">
+                        <h1>FireyGaming</h1>
+                    </div>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

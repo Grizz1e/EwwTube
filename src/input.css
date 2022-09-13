@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: linear 0.1s;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 8vh;
+}
+.search-bar:focus {
+    outline: none;
+}
+
+.menu-list {
+    height: 92vh;
+    top: 8vh;
+}
+.menu-list::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.menu-list:hover::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.menu-list:hover::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+.video-container {
+    top: 8vh;
+}
+.menu-closed {
+    margin-left: 1rem;
+}
+.thumb-box, .pfp-box, .upcoming {
+    background: url("https://picsum.photos/1920/1080");
+}

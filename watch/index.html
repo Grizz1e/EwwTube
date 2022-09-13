@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsurAAAnce & Rick Astley Never Gonna Give You Up</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css">
+    <script src="/src/script/index.js" defer></script>
+</head>
+
+<body class="text-white bg-dark overflow-x-hidden">
+    <nav class="bg-black flex justify-between items-center p-5 w-screen z-50 h-15">
+        <div class="left-nav flex items-center text-center">
+            <div class="mr-20 hover:text-highlight">
+                <i class="fa fa-bars fa-2xl" id="menu-btn"></i>
+            </div>
+            <div class="hover:text-highlight relative">
+                <a href="/">
+                    <h1 class="font-bold text-3xl whitespace-nowrap"><i
+                            class="fa-brands fa-youtube fa-xl mx-1 text-highlight"></i><span
+                            class="font-oswald">EwwTube</span><sup
+                            class="text-base mb-5 font-sans text-grey absolute top-0.1">NP</sup></h1>
+                </a>
+            </div>
+        </div>
+        <div class="center-nav flex items-center bg-bg rounded border-4 border-transparent hover:border-highlight hover:border-4 transition-none"
+            id="center-nav">
+            <i class="fa-solid fa-magnifying-glass pl-1"></i>
+            <input type="text" class="w-96 h-10 px-5 bg-transparent search-bar" id="search-bar" placeholder="Search">
+        </div>
+        <div class="right-nav flex items-center">
+            <div>
+                <i class="fa fa-arrow-up-from-bracket fa-2xl hover:text-highlight px-5"></i>
+            </div>
+            <div>
+                <i class="fa-regular fa-bell fa-2xl hover:text-highlight px-5"></i>
+            </div>
+            <div>
+                <i class="fa-regular fa-user fa-2xl hover:text-highlight px-5"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-list fixed bg-black overflow-hidden overflow-y-scroll hidden" id="left-container">
+        <ul class="pb-96">
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-home"></i>Home</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-people-group"></i>Following</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-star"></i>Premium</li>
+            <li>
+                <hr class="border-grey mx-auto my-5 w-4/5">
+            </li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-book"></i>Library</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-clock-rotate-left"></i>History</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-film"></i>Your Videos</li>
+            <li>
+                <hr class="border-grey mx-auto my-5 w-4/5">
+            </li>
+            <li class="py-2 pl-5 pr-2 text-grey font-bold">SUBSCRIPTIONS</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-home"></i>Home</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-people-group"></i>Following</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-star"></i>Premium</li>
+            <li>
+                <hr class="border-grey mx-auto my-5 w-4/5">
+            </li>
+            <li class="py-2 pl-5 pr-2 text-grey font-bold">EXPLORE</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-gamepad"></i>Gaming</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-trophy"></i>Sports</li>
+            <li>
+                <hr class="border-grey mx-auto my-5 w-4/5">
+            </li>
+            <li class="py-2 pl-5 pr-2 text-grey font-bold">MORE FROM EWWTUBE</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa-regular fa-circle-play text-highlight"></i>EwwTube Music</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-child text-highlight text-3xl"></i>EwwTube Kids</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-tv text-highlight"></i>EwwTube TV</li>
+            <li>
+                <hr class="border-grey mx-auto my-5 w-4/5">
+            </li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa fa-cog"></i>Settings</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa-regular fa-flag"></i>Report history</li>
+            <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
+                    class="fa-regular fa-circle-question"></i>Premium</li>
+            <li>
+                <hr class="border-grey mx-auto my-5 w-4/5">
+            </li>
+        </ul>
+    </div>
+    <div class="mt-10 mx-20 flex">
+        <div>
+            <div>
+                <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/GtL1huin9EE?autoplay=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div>
+                <div>
+                    <h1 class="text-2xl font-bold mt-5 mb-2">Official Season 1 Trailer | Better Fuel Huell</h1>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348,903 Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-evenly font-bold text-center">
+                        <div class="px-2">
+                            <i class="fa-regular fa-thumbs-up fa-2xl px-2"></i><span class="text-xl">52K</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa-regular fa-thumbs-down fa-2xl px-2"></i><span class="text-xl">619</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa-solid fa-share fa-2xl px-2"></i><span class="text-xl">Share</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa-solid fa-down-long fa-2xl px-2"></i><span class="text-xl">Download</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa-solid fa-scissors fa-2xl px-2"></i><span class="text-xl">Clip</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa-solid fa-list-check fa-2xl px-2"></i><Span class="text-xl">Save</Span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5">
+
+            </div>
+        </div>
+        <div class="mx-10">
+            <div class="flex mb-10 hover:scale-105">
+                <img width="250px" src="https://picsum.photos/1920/1080" alt="">
+                <div class="px-10 w-50">
+                    <h1 class="font-bold">Official Season 1 Trailer | Better Fuel Huell</h1>
+                    <h1>FireyGaming</h1>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-10 hover:scale-105">
+                <img width="250px" src="https://picsum.photos/1920/1080" alt="">
+                <div class="px-10 w-50">
+                    <h1 class="font-bold">Official Season 1 Trailer | Better Fuel Huell</h1>
+                    <h1>FireyGaming</h1>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-10 hover:scale-105">
+                <img width="250px" src="https://picsum.photos/1920/1080" alt="">
+                <div class="px-10 w-50">
+                    <h1 class="font-bold">Official Season 1 Trailer | Better Fuel Huell</h1>
+                    <h1>FireyGaming</h1>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-10 hover:scale-105">
+                <img width="250px" src="https://picsum.photos/1920/1080" alt="">
+                <div class="px-10 w-50">
+                    <h1 class="font-bold">Official Season 1 Trailer | Better Fuel Huell</h1>
+                    <h1>FireyGaming</h1>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mb-10 hover:scale-105">
+                <img width="250px" src="https://picsum.photos/1920/1080" alt="">
+                <div class="px-10 w-50">
+                    <h1 class="font-bold">Official Season 1 Trailer | Better Fuel Huell</h1>
+                    <h1>FireyGaming</h1>
+                    <div class="flex views-date">
+                        <div class="views-box">
+                            <h1>348K Views&nbsp;</h1>
+                        </div>
+                        <div class="date-box">
+                            <h1>• 2 weeks ago</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
