@@ -27,6 +27,6 @@ centerNav.addEventListener("mouseout", () => {
 
 vidBox.forEach(vid => {
     vid.addEventListener('click', () => {
-        window.location = '/src/html/watch.html'
+        window.location = '/watch'
     })
 })
