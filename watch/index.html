@@ -39,11 +39,115 @@
             <div>
                 <i class="fa-regular fa-bell fa-2xl hover:text-highlight px-5"></i>
             </div>
-            <div>
+            <div id="account-btn">
                 <i class="fa-regular fa-user fa-2xl hover:text-highlight px-5"></i>
             </div>
         </div>
     </nav>
+    <div class="fixed right-10 top-16 z-50 bg-black w-fit hidden" id="account-menu">
+        <div class="flex pt-5 px-2 items-center">
+            <div class="pfp-box w-16 aspect-square rounded-full"></div>
+            <div class="mx-5">
+                <h1 class="font-bold">FireyGaming</h1>
+                <h1 class="text-blue-400 hover:cursor-pointer">Manage your Gugal Account</h1>
+            </div>
+
+        </div>
+        <hr class="border-bg mx-auto my-3">
+        <div class="">
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-solid fa-user fa-xl"></i>
+                <h1 class="pl-5 text-md">Your Channel</h1>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-solid fa-feather fa-xl"></i>
+                <h1 class="pl-5 text-md">EwwTube Studio</h1>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex justify-between items-center px-5 py-2">
+                <div class="flex items-center">
+                    <i class="w-10 fa-regular fa-address-book fa-xl"></i>
+                    <h1 class="pl-5 text-md">Switch Account</h1>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-right fa-xl"></i>
+                </div>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+                <h1 class="pl-5 text-md">Sign Out</h1>
+            </div>
+        </div>
+        <hr class="border-bg mx-auto my-3">
+        <div>
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-solid fa-circle-dollar-to-slot fa-xl"></i>
+                <h1 class="pl-5 text-md">Purchases and memberships</h1>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-solid fa-user-shield fa-xl"></i>
+                <h1 class="pl-5 text-md">Your data in EwwTube</h1>
+            </div>
+        </div>
+        <hr class="border-bg mx-auto my-3">
+        <div>
+            <div class="hover:text-highlight hover:bg-bg flex justify-between items-center px-5 py-2">
+                <div class="flex items-center">
+                    <i class="w-10 fa-regular fa-moon fa-xl"></i>
+                    <h1 class="pl-5 text-md">Appearance: Device theme</h1>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-right fa-xl"></i>
+                </div>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex justify-between items-center px-5 py-2">
+                <div class="flex items-center">
+                    <i class="w-10 fa-solid fa-language fa-xl"></i>
+                    <h1 class="pl-5 text-md">Language: English</h1>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-right fa-xl"></i>
+                </div>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex justify-between items-center px-5 py-2">
+                <div class="flex items-center">
+                    <i class="w-10 fa-solid fa-user-lock fa-xl"></i>
+                    <h1 class="pl-5 text-md">Restricted mode: Off</h1>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-right fa-xl"></i>
+                </div>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex justify-between items-center px-5 py-2">
+                <div class="flex items-center">
+                    <i class="w-10 fa-solid fa-globe fa-xl"></i>
+                    <h1 class="pl-5 text-md">Location: Nepal</h1>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-right fa-xl"></i>
+                </div>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-regular fa-keyboard fa-xl"></i>
+                <h1 class="pl-5 text-md">Keyboard shortcuts</h1>
+            </div>
+        </div>
+        <hr class="border-bg mx-auto my-3">
+        <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+            <i class="w-10 fa-solid fa-gear fa-xl"></i>
+            <h1 class="pl-5 text-md">Settings</h1>
+        </div>
+        <hr class="border-bg mx-auto my-3">
+        <div>
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-regular fa-circle-question fa-xl"></i>
+                <h1 class="pl-5 text-md">Help</h1>
+            </div>
+            <div class="hover:text-highlight hover:bg-bg flex items-center px-5 py-2">
+                <i class="w-10 fa-regular fa-comment fa-xl"></i>
+                <h1 class="pl-5 text-md">Send feedback</h1>
+            </div>
+        </div>
+    </div>
     <div class="menu-list fixed bg-black overflow-hidden overflow-y-scroll hidden" id="left-container">
         <ul class="pb-96">
             <li class="menu-items py-2 pl-5 pr-2 grid grid-cols-2 hover:bg-bg hover:text-highlight text-xl"><i
@@ -170,53 +274,62 @@
                     </div>
                     <hr class="my-5 border-bg border-y-2">
                     <div class="my-10">
-                        <h1 class="text-xl">8.979 Comments <span><i class="fa-solid fa-caret-down ml-10 mr-5"></i> Sort By</span></h1>
+                        <h1 class="text-xl">8.979 Comments <span><i class="fa-solid fa-caret-down ml-10 mr-5"></i> Sort
+                                By</span></h1>
                     </div>
                     <div class="flex items-center mb-5">
                         <div class="pfp-box w-12 aspect-square rounded-full"></div>
                         <div class="w-full flex justify-center">
-                            <input class="bg-transparent border-bg focus:border-highlight border-0 border-b-2 w-full mx-5 outline-none " type="text" name="comment" id="comment-input" placeholder="Add a comment...">
+                            <input
+                                class="bg-transparent border-bg focus:border-highlight border-0 border-b-2 w-full mx-5 outline-none "
+                                type="text" name="comment" id="comment-input" placeholder="Add a comment...">
                         </div>
                     </div>
                     <div class="flex items-center mb-10">
                         <div class="pfp-box w-12 aspect-square rounded-full"></div>
                         <div class="mx-5">
-                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours ago</span></h1>
+                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours
+                                    ago</span></h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea!</p>
                         </div>
                     </div>
                     <div class="flex items-center mb-10">
                         <div class="pfp-box w-12 aspect-square rounded-full"></div>
                         <div class="mx-5">
-                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours ago</span></h1>
+                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours
+                                    ago</span></h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea!</p>
                         </div>
                     </div>
                     <div class="flex items-center mb-10">
                         <div class="pfp-box w-12 aspect-square rounded-full"></div>
                         <div class="mx-5">
-                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours ago</span></h1>
+                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours
+                                    ago</span></h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea!</p>
                         </div>
                     </div>
                     <div class="flex items-center mb-10">
                         <div class="pfp-box w-12 aspect-square rounded-full"></div>
                         <div class="mx-5">
-                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours ago</span></h1>
+                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours
+                                    ago</span></h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea!</p>
                         </div>
                     </div>
                     <div class="flex items-center mb-10">
                         <div class="pfp-box w-12 aspect-square rounded-full"></div>
                         <div class="mx-5">
-                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours ago</span></h1>
+                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours
+                                    ago</span></h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea!</p>
                         </div>
                     </div>
                     <div class="flex items-center mb-10">
                         <div class="pfp-box w-12 aspect-square rounded-full"></div>
                         <div class="mx-5">
-                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours ago</span></h1>
+                            <h1><span class="font-bold">FireyGaming</span> <span class="text-zinc-300 text-sm">14 hours
+                                    ago</span></h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea!</p>
                         </div>
                     </div>

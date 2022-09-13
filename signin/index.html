@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Gugal Accounts</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css">
+    <script src="/src/script/index.js" defer></script>
+</head>
+
+<body>
+    <div class="border-gray-400 border-2 w-1/4 border-solid mt-40 rounded-md mx-auto">
+        <div class="text-center w-full mt-14">
+            <h1 class="font-bold text-2xl"><span class="text-blue-600">G</span><span class="text-red-500">u</span><span
+                    class="text-yellow-500">g</span><span class="text-blue-500">a</span><span
+                    class="text-green-500">l</span>
+            </h1>
+        </div>
+        <div class="text-center my-3">
+            <h1 class="text-2xl">Sign in</h1>
+            <h1 class="text-xl my-2">Use your Gugal Account</h1>
+        </div>
+        <form action="/signin/password/" method="get" onsubmit="return validateEmail()">
+            <div class="flex justify-center mt-5">
+                <input class="outline-none border-gray-400 border-2 w-10/12 p-4" type="email" name="email"
+                    id="email-box" placeholder="Email or email">
+            </div>
+            <div class="mx-10">
+                <h1 class="text-red-600" id="error-box"></h1>
+            </div>
+            <div class="mx-10 font-bold mt-2 mb-20 hover:cursor-pointer">
+                <h1 class="text-blue-600">Forgot email?</h1>
+            </div>
+            <div class="ml-10 mb-10">
+                <h1>Not your computer? Use Guest mode to sign in privately.</h1>
+                <h1 class="text-blue-600 font-bold">Learn more</h1>
+            </div>
+            <div class="mx-10 mb-5 flex justify-between items-center">
+                <h1 class="text-blue-600 font-bold">Create account</h1>
+                <button class="bg-blue-600 text-white font-bold px-4 py-2 rounded" type="submit">Next</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="w-1/4 mx-auto flex justify-between items-center my-2">
+        <div>
+            <h1 class="">English (United States) <span class="ml-5"><i
+                        class="fa-sharp fa-solid fa-caret-down"></i></span></h1>
+        </div>
+        <div class="flex">
+            <h1 class="pl-5">Help</h1>
+            <h1 class="pl-5">Privacy</h1>
+            <h1 class="pl-5">Terms</h1>
+        </div>
+    </div>
+    <script>
+        function validateEmail() {
+            let email = document.getElementById("email-box").value
+            let error = document.getElementById('error-box')
+            if (email == "") {
+                error.textContent = "⚠️ Enter an email or email"
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
