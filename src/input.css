@@ -46,3 +46,10 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.text-5xl {
+    font-size: 7rem;
+}
+.text-4xl {
+    font-size: 5rem;
+    line-height: 100px;
+}

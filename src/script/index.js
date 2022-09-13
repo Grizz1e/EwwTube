@@ -6,6 +6,8 @@ const homepageMain = document.getElementById("home-area")
 const vidBox = document.querySelectorAll('.vid-box')
 const accBtn = document.getElementById('account-btn')
 const accMenu = document.getElementById('account-menu')
+const signoutBtn = document.getElementById('sign-out')
+const followingBtn = document.getElementById('following')
 
 menuBtn.addEventListener('click', () => {
     leftContainer.classList.toggle("hidden")
@@ -27,9 +29,14 @@ centerNav.addEventListener("mouseout", () => {
     }
 })
 accBtn.addEventListener('click', () => {
-    document.body.classList.toggle('overflow-hidden')
     accBtn.classList.toggle('text-highlight')
     accMenu.classList.toggle('hidden')
+})
+signoutBtn.addEventListener('click', () => {
+    window.location.replace('/signin')
+})
+followingBtn.addEventListener('click', () => {
+    window.location.href = '/following'
 })
 vidBox.forEach(vid => {
     vid.addEventListener('click', () => {
